@@ -44,6 +44,10 @@ class _PatternScreenState extends State<PatternScreen> {
             Padding(
               padding: EdgeInsets.symmetric(vertical: 20),
               child: Slider(
+                activeColor: Colors.blue,
+                inactiveColor: Colors.blue.shade50,
+                min: 0.0,
+                max: 5.0,
                 value: sliderValue,
                 onChanged: (value) {
                   setState(() {
@@ -58,11 +62,6 @@ class _PatternScreenState extends State<PatternScreen> {
                     }
                   });
                 },
-                activeColor: Colors.blue,
-                divisions: 5,
-                inactiveColor: Colors.blue.shade50,
-                min: 0.0,
-                max: 5.0,
               ),
             ),
           ],
