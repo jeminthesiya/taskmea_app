@@ -17,6 +17,14 @@ class _AddScreenState extends State<AddScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, 'pattern');
+            },
+            icon: Icon(Icons.fiber_new),
+          ),
+        ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -118,12 +126,10 @@ class _AddScreenState extends State<AddScreen> {
                     skill: txtskill.text,
                   );
 
-                  Navigator.pushNamed(context, 'TODO',
-                      arguments: AllData);
+                  Navigator.pushNamed(context, 'TODO', arguments: AllData);
                 },
                 child: Text("Next"),
               ),
-
             ],
           ),
         ),

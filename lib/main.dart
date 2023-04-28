@@ -4,6 +4,7 @@ import 'package:taskmea_app/screen/introscreen/intro.dart';
 import 'package:taskmea_app/screen/login/view/first.dart';
 import 'package:taskmea_app/screen/login/view/signin.dart';
 import 'package:taskmea_app/screen/login/view/signup.dart';
+import 'package:taskmea_app/screen/pattern/view/pattern.dart';
 import 'package:taskmea_app/todo/add.dart';
 import 'package:taskmea_app/todo/edit.dart';
 import 'package:taskmea_app/todo/todoscreen.dart';
@@ -16,6 +17,7 @@ void main() {
       routes: {
         '/': (p0) => IntroScreen(),
         'create': (p0) => Create_Screen(),
+        'pattern': (p0) => PatternScreen(),
         'login': (p0) => LogIn_Screen(),
         "signup": (p0) => SignOut_Screen(),
         'TODO':(p0) => TodoScreen(),
